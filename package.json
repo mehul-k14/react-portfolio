@@ -1,5 +1,6 @@
 {
   "name": "react-portfolio",
+  "homepage": "https://mehul-k14.github.io/react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^4.0.0",
     "gsap": "npm:gsap-trial@^3.9.0",
     "gsap-trial": "^3.11.3",
     "loaders.css": "^0.1.2",
@@ -25,6 +27,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
